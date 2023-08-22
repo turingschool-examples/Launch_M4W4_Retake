@@ -10,29 +10,32 @@
 Open up `Program.cs` and run your program. It should run with no errors, if you get an error reach out to your instructor.
 
 This exercise involved some refactoring and some new features.
-Step 1. Currently there are two classess `Student` and `Teacher` that have a lot of repeated code between them. Create a new class `Person` that will be the base class. Then update `Student` and `Teacher` to be derived from `Person`. Include as much in your `Person` class as you can to keep your code DRY (Don't Repeat Yourself). 
 
-Testing Step 1: Uncomment the code under "Step 1:" in the Main method. That code should now run without error.
-Step 2. Implement a new class called `School` that uses dependency injection and takes in a list of people as a dependency. Implement a method called `ListBirthdays` in your school class that calls the `GetBirthday` method and prints to the console each student and teacher's birthday.
-Testing Step 1: Uncomment the code under "Step 2:" in the Main method. That code should now run without error and output a bunch of names and birthdays.
+**Step 1:** Currently there are two classess `Student` and `Teacher` that have a lot of repeated code between them. Create a new class `Person` that will be the base class. Then update `Student` and `Teacher` to be derived from `Person`. Include as much in your `Person` class as you can to keep your code DRY (Don't Repeat Yourself). 
+
+**Testing Step 1:** Uncomment the code under "Step 1:" in the Main method. That code should now run without error.
+
+**Step 2:** Implement a new class called `School` that uses dependency injection and takes in a list of people as a dependency. Implement a method called `ListBirthdays` in your school class that calls the `GetBirthday` method and prints to the console each student and teacher's birthday.
+
+**Testing Step 2:** Uncomment the code under "Step 2:" in the Main method. That code should now run without error and output a bunch of names and birthdays.
 
 Ungraded extra challenge: If you have time, improve the way the birthdays are output. Can you group them by month or by Student/Teacher?
 
 ### Exercise 2: Interfaces (4 points)
 Open up `InterfacePractice.cs`. You should not need to run this file, you will just edit it.
 
-Step 1: Take a look at the two classes `Car` and `Bicycle`. They both implement an interface called `InterfaceNameHere`. Replace all three uses of `InterfaceNameHere` with a fitting name for this interface.
-Step 2: The interface has already been created for you on line 5. Fill in the details for any methods and/or properties that make sense based on the two classes implementing this interface.
+**Step 1:** Take a look at the two classes `Car` and `Bicycle`. They both implement an interface called `InterfaceNameHere`. Replace all three uses of `InterfaceNameHere` with a fitting name for this interface.
+
+**Step 2:** The interface has already been created for you on line 5. Fill in the details for any methods and/or properties that make sense based on the two classes implementing this interface.
 
 ## Questions (8 points)
 
 Edit this file with your answers.
 
-1.What are some of the benefits of using inheritance? (1 point)
+1. What are some of the benefits of using inheritance? (1 point)
     * < Your answer >  
-
 2. What might be some of the disadvantages of using inheritance? (1 point)
-	* < Your answer >  
+    * < Your answer >  
 
 3. How would you describe the difference between the base class and the derived class when working with inheritance? (1 point)
 	* < Your answer >  
