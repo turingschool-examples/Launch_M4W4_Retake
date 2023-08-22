@@ -58,6 +58,7 @@ public class Program
     {
         // Your solution should make the following code run without errors!
 
+        //// Step 1:
         //// Creating instances of Student and Teacher
         //Student studentAlice = new Student("Alice", 10, new DateTime(2007, 1, 20));
         //Student studentEthan = new Student("Ethan", 12, new DateTime(2005, 3, 10));
@@ -66,6 +67,7 @@ public class Program
         //// Creating a list of people
         //List<Person> people = new List<Person> { studentAlice, studentEthan, teacherJohnson };
 
+        //// Step 2:
         //// Using dependency injection to create a School instance
         //School school = new School(people);
 
