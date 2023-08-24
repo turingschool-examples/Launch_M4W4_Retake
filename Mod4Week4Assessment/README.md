@@ -9,7 +9,7 @@
 
 Open up `Program.cs` and run your program. It should run with no errors, if you get an error reach out to your instructor.
 
-This exercise involved some refactoring and some new features.
+This exercise involves some refactoring and some new features.
 
 **Step 1:** Currently there are two classess `Student` and `Teacher` that have a lot of repeated code between them. Create a new class `Person` that will be the base class. Then update `Student` and `Teacher` to be derived from `Person`. Include as much in your `Person` class as you can to keep your code DRY (Don't Repeat Yourself). 
 
