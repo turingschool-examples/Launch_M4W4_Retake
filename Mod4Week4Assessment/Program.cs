@@ -56,7 +56,7 @@ public class Program
 {
     public static void Main(string[] args)
     {
-        // Your solution should make the following code run without errors!
+        //// Your solution should make the following code run without errors!
 
         //// Step 1:
         //// Creating instances of Student and Teacher
