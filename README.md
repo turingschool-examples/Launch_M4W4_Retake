@@ -1,4 +1,4 @@
-# Week 4 Assessment
+# Week 4 Retake
 
 ## Setup
 
@@ -7,9 +7,5 @@
 
 ## Submission
 
-* Submit a link to your forked repository in the submission form posted in Slack
+* Send a link to your forked repository to your instructors in slack
 
-### Rubric
-This assessment has a total of 20 points.  A score of 15 or higher is a pass.
-
-As a reminder, this assessment is for students and instructors to determine if there are any areas that need additional reinforcement!
