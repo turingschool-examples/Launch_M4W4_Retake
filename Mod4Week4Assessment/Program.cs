@@ -1,22 +1,22 @@
 ﻿using System;
 using System.Collections.Generic;
 
-public class Student
+public class User
 {
     public string Name { get; private set; }
-    public int Grade { get; private set; }
+    public List<string> Programs { get; private set; }
     public DateTime Birthday { get; private set; }
 
-    public Student(string name, int grade, DateTime birthday)
+    public User(string name, List<string> programs, DateTime birthday)
     {
         Name = name;
-        Grade = grade;
+        Programs = programs;
         Birthday = birthday;
     }
 
     public string GetGreeting()
     {
-        return $"Hello, I'm {Name}, a student in grade {Grade}!";
+        return $"Hello, I'm {Name}, a participate in these programs: {String.Join(", ", Programs)}!";
     }
 
     public string GetBirthday()
@@ -25,13 +25,13 @@ public class Student
     }
 }
 
-public class Teacher
+public class Librarian
 {
     public string Name { get; private set; }
     public DateTime Birthday { get; private set; }
     public string Subject { get; private set; }
 
-    public Teacher(string name, string subject, DateTime birthday)
+    public Librarian(string name, string subject, DateTime birthday)
     {
         Name = name;
         Birthday = birthday;
@@ -40,7 +40,7 @@ public class Teacher
 
     public string GetGreeting()
     {
-        return $"Hello, I'm {Name}, a {Subject} teacher!";
+        return $"Hello, I'm {Name}, a {Subject} librarian!";
     }
 
     public string GetBirthday()
@@ -49,8 +49,8 @@ public class Teacher
     }
 }
 
-// Create a school class that uses dependency injection by taking in a list of people.
-public class School { }
+// Create a library class that uses dependency injection by taking in a list of people.
+public class Library { }
 
 public class Program
 {
@@ -59,19 +59,19 @@ public class Program
         //// Your solution should make the following code run without errors!
 
         //// Step 1:
-        //// Creating instances of Student and Teacher
-        //Student studentAlice = new Student("Alice", 10, new DateTime(2007, 1, 20));
-        //Student studentEthan = new Student("Ethan", 12, new DateTime(2005, 3, 10));
-        //Teacher teacherJohnson = new Teacher("Mrs. Johnson", "Math", new DateTime(1980, 12, 10));
+        //// Creating instances of User and Librarian
+        //User userAlice = new User("Alice", new List<string>() {"young adult readers", "mathletes" }, new DateTime(2007, 1, 20));
+        //User userEthan = new User("Ethan", new List<string>() {"mathletes"}, new DateTime(2005, 3, 10));
+        //Librarian librarianJohnson = new Librarian("Mrs. Johnson", "Math", new DateTime(1980, 12, 10));
 
         //// Creating a list of people
-        //List<Person> people = new List<Person> { studentAlice, studentEthan, teacherJohnson };
+        //List<Person> people = new List<Person> { userAlice, userEthan, librarianJohnson };
 
         //// Step 2:
-        //// Using dependency injection to create a School instance
-        //School school = new School(people);
+        //// Using dependency injection to create a Library instance
+        //Library library = new Library(people);
 
         //// List all birthdays
-        //school.ListBirthdays();
+        //library.ListBirthdays();
     }
 }
